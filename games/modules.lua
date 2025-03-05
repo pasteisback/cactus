@@ -275,7 +275,7 @@ end
 local vapeAssert = function(argument, title, text, duration, hault, moduledisable, module) 
 	if not argument then
     local suc, res = pcall(function()
-    local notification = GuiLibrary:CreateNotification(title or "QP Vape", text or "Failed to call function.", duration or 20, "assets/WarningNotification.png")
+    local notification = GuiLibrary:CreateNotification(title or "Moon Vape", text or "Failed to call function.", duration or 20, "assets/WarningNotification.png")
     notification.IconLabel.ImageColor3 = Color3.new(220, 0, 0)
     notification.Frame.Frame.ImageColor3 = Color3.new(220, 0, 0)
     if moduledisable and (module and vape.Modules[module].Enabled) then vape.Modules[module]:Toggle(false) end
